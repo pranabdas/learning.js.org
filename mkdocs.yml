@@ -1,0 +1,39 @@
+site_name: Learning Javascript 
+site_url: https://pranabdas.github.io/
+repo_url: https://github.com/pranabdas/
+repo_name: Homepage 
+site_description: Learning Javascript
+site_author: Pranab Das 
+
+nav:
+    - Home: index.md 
+    - The Basics: 
+      - Tools for Javascript development: basics/setup.md 
+      - Browser console and external script: basics/console.md 
+      - Working with data: basics/working-with-data.md 
+      - Conditional statement: basics/conditional-statement.md 
+      - Arrays: basics/arrays.md
+    - Functions and Objects:  
+      - Functions: functions-objects/functions.md 
+      
+theme: 
+    name: null 
+    custom_dir: simplicity  
+    static_templates:
+        - 404.html
+
+    include_search_page: true
+    search_index_only: false
+
+    highlightjs: true
+    hljs_languages: python 
+
+markdown_extensions:
+  - pymdownx.arithmatex 
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+
+copyright: © Copyright 2020 Pranab Das. All rights reserved. 
+
+# google_analytics: [UA-163317742-1, https://pranabdas.github.io/]
