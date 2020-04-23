@@ -38,6 +38,7 @@ console.log(biggerRatio)
 
 0.8333333333333334
 ``` 
+Note that if you don't add the parenthesis () in the end of the variable, and `console.log` it will print the function. 
 
 We can have arguments to an anonymous function as well: 
 ```js 
@@ -53,4 +54,16 @@ console.log(biggerRatio2)
 0.75
 ```
 
-#### Immediately invoked function 
+#### Immediately invoked function expression 
+
+In this case the function is invoked as soon as the browser encounters them. It can populate our variable straightaway. We wrap the whole function inside a parenthesis (), followed by another set of parenthesis to pass the variables. 
+```js 
+var theBiggest3 = (function(a, b) {
+    a > b ? result = a : result = b;
+    return result; 
+})(3/4, 5/7)
+
+console.log(theBiggest3);
+
+0.75
+``` 

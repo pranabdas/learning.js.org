@@ -12,3 +12,9 @@ Table of content:
     - [Arrays](basics/arrays.md) 
 + Functions and Objects 
     - [Functions](functions-objects/functions.md) 
+    - [Variable scope](functions-objects/variable-scope.md) 
+    - [Objects](functions-objects/objects.md) 
++ Loop 
+    - [for loop](loop/loop.md)
++ DOM 
+    - [Document Object Model](DOM/dom.md)

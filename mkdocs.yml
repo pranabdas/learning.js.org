@@ -8,14 +8,20 @@ site_author: Pranab Das
 nav:
     - Home: index.md 
     - The Basics: 
-      - Tools for Javascript development: basics/setup.md 
-      - Browser console and external script: basics/console.md 
+      - Setup: basics/setup.md 
+      - Console and external script: basics/console.md 
       - Working with data: basics/working-with-data.md 
       - Conditional statement: basics/conditional-statement.md 
       - Arrays: basics/arrays.md
     - Functions and Objects:  
       - Functions: functions-objects/functions.md 
-      
+      - Variable scope: functions-objects/variable-scope.md 
+      - Objects: functions-objects/objects.md 
+    - Loop: 
+      - loop: loop/loop.md
+    - DOM: 
+      - Document Object Model: DOM/dom.md 
+
 theme: 
     name: null 
     custom_dir: simplicity  
