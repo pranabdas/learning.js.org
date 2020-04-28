@@ -28,7 +28,7 @@ document.querySelectorAll("li")
 
 We can select and change and element in the html document: 
 ```js 
-document.querySelector("h4.city").innerHTML = "List of cities"innerHTML 
+document.querySelector("h4.city").innerHTML 
 document.querySelector("h4.city").outerHTML 
 ``` 
 

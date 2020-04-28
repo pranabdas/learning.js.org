@@ -1,7 +1,5 @@
 site_name: Learning Javascript 
-site_url: https://pranabdas.github.io/
-repo_url: https://github.com/pranabdas/
-repo_name: Homepage 
+repo_url: https://pranabdas.github.io 
 site_description: Learning Javascript
 site_author: Pranab Das 
 
@@ -21,6 +19,11 @@ nav:
       - loop: loop/loop.md
     - DOM: 
       - Document Object Model: DOM/dom.md 
+    - Node.js: 
+      - Introduction: node/introduction.md 
+      - Standard input-output: node/std-input-output.md 
+      - Core modules: node/core-modules.md 
+      - File system: node/file-system.md 
 
 theme: 
     name: null 
@@ -32,7 +35,7 @@ theme:
     search_index_only: false
 
     highlightjs: true
-    hljs_languages: python 
+    hljs_languages: Javascript 
 
 markdown_extensions:
   - pymdownx.arithmatex 
