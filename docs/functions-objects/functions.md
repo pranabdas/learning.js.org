@@ -67,3 +67,14 @@ console.log(theBiggest3);
 
 0.75
 ``` 
+
+##### Arrow functions 
+
+This is pretty much the same as anonymous function but with concise syntax: 
+```js 
+var total = (price) => {
+    return price + price * 7/100; 
+}; 
+
+console.log(total(100)); 
+```

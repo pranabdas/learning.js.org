@@ -1,3 +1,4 @@
 site/ 
 simplicity/ 
-/**/nodemodules/
+/**/node_modules/ 
+src/electron/sample_spectrum.txt 

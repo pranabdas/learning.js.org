@@ -11,6 +11,11 @@ course.published = true;
 console.log(course);
 
 {title: "Learning Javascript", level: "Beginner", published: true}
+``` 
+
+We can delete a property by the following way: 
+```js 
+delete course.level 
 ```
 There is another shorthand: 
 ```js 

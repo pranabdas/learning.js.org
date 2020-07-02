@@ -1,33 +1,42 @@
-site_name: Learning Javascript 
-repo_url: https://pranabdas.github.io 
+site_name: Learning Javascript
+repo_url: https://pranabdas.github.io/
 site_description: Learning Javascript
-site_author: Pranab Das 
+site_author: Pranab Das
 
 nav:
-    - Home: index.md 
-    - The Basics: 
-      - Setup: basics/setup.md 
-      - Console and external script: basics/console.md 
-      - Working with data: basics/working-with-data.md 
-      - Conditional statement: basics/conditional-statement.md 
-      - Arrays: basics/arrays.md
-    - Functions and Objects:  
-      - Functions: functions-objects/functions.md 
-      - Variable scope: functions-objects/variable-scope.md 
-      - Objects: functions-objects/objects.md 
-    - Loop: 
-      - loop: loop/loop.md
-    - DOM: 
-      - Document Object Model: DOM/dom.md 
-    - Node.js: 
-      - Introduction: node/introduction.md 
-      - Standard input-output: node/std-input-output.md 
-      - Core modules: node/core-modules.md 
-      - File system: node/file-system.md 
+    - Table of Contents: index.md
+    - The Basics:
+          - Setup: basics/setup.md
+          - Console and external script: basics/console.md
+          - Working with data: basics/working-with-data.md
+          - Conditional statement: basics/conditional-statement.md
+          - Arrays: basics/arrays.md
+    - Functions and Objects:
+          - Functions: functions-objects/functions.md
+          - Variable scope: functions-objects/variable-scope.md
+          - Objects: functions-objects/objects.md
+          - map(): functions-objects/map.md
+    - Loop:
+          - loop: loop/loop.md
+    - DOM:
+          - Document Object Model: DOM/dom.md
+    - Node.js:
+          - Introduction: node/introduction.md
+          - Standard input-output: node/std-input-output.md
+          - Core modules: node/core-modules.md
+          - File system: node/file-system.md
+          - Understanding callbacks: node/callbacks.md
+          - module.exports: node/module.exports.md
+    - Electron.js:
+          - Creating first Electron.js application: electron/electron.md
+    - React.js:
+          - React.js: react/react.md
+          - To do list project: react/to-do-list.md
+          - Shopping cart project: react/shopping-cart.md
 
-theme: 
-    name: null 
-    custom_dir: simplicity  
+theme:
+    name: null
+    custom_dir: simplicity
     static_templates:
         - 404.html
 
@@ -35,14 +44,14 @@ theme:
     search_index_only: false
 
     highlightjs: true
-    hljs_languages: Javascript 
+    hljs_languages: [javascript]
 
 markdown_extensions:
-  - pymdownx.arithmatex 
+    - pymdownx.arithmatex
+    - attr_list
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
 
-copyright: © Copyright 2020 Pranab Das. All rights reserved. 
-
+copyright: " "
 # google_analytics: [UA-163317742-1, https://pranabdas.github.io/]

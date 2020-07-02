@@ -14,6 +14,7 @@ Table of content:
     - [Functions](functions-objects/functions.md) 
     - [Variable scope](functions-objects/variable-scope.md) 
     - [Objects](functions-objects/objects.md) 
+    - [map()](functions-objects/map.md) 
 + Loop 
     - [Loop](loop/loop.md)
 + DOM 
@@ -23,3 +24,11 @@ Table of content:
     - [Standard input-output](node/std-input-output.md) 
     - [Core modules](node/core-modules.md) 
     - [File system](node/file-system.md) 
+    - [Understanding callbacks](node/callbacks.md) 
+    - [module.exports](node/module.exports.md) 
++ Electron.js 
+    - [Creating first Electron.js application](electron/electron.md) 
++ React.js 
+    - [React.js](react/react.md) 
+    - [To do list project](react/to-do-list.md) 
+    - [Shopping cart project](react/shopping-cart.md) 
