@@ -1,12 +1,10 @@
 ### React.js 
 
-An open source framework to build web application <https://reactjs.org>
+An open source framework to build web application [https://reactjs.org](https://reactjs.org){:target="_blank"}. You need to have node.js installed in your system. 
 
 ```js 
-// install create-react-app 
-npm install create-react-app 
-//create your app/project 
-create-react-app my-react-app 
+// create your app. npx allows to run create-react-app without installing
+npx create-react-app my-react-app 
 // move to my-react project directory 
 cd my-react-app 
 // start app 
