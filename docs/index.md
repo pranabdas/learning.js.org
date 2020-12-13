@@ -19,6 +19,7 @@ Table of content:
     - [Loop](loop/loop.md)
 + DOM 
     - [Document Object Model](DOM/dom.md) 
+    - [Event Handler](DOM/event-handler.md)
 + Node.js 
     - [Introduction](node/introduction.md) 
     - [Standard input-output](node/std-input-output.md) 
@@ -32,3 +33,4 @@ Table of content:
     - [React.js](react/react.md) 
     - [To do list project](react/to-do-list.md) 
     - [Shopping cart project](react/shopping-cart.md) 
+    - [Deploy to Github pages](react/githubpages.md)

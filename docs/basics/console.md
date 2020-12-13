@@ -71,6 +71,10 @@ We can write javascript inline with html within the `<script></script>` tags.
 
 #### Linking to external script files 
 
-Here we will write our javascript in a separate file called *script.js*. We will add the script tag after the body element. `<script src="script.js"></script>' Now we can write our code in the file script.js and reload the index.html to see our changes. 
+Here we will write our javascript in a separate file called *script.js*. We will add the script tag after the body element. 
+```js
+<script src="script.js"></script>
+```
+Now we can write our code in the file script.js and reload the index.html to see our changes. 
 
 Note that if we put the script tag in the head, we need to include `defer` or `async` attribute, otherwise it will run into problem of finding the body element before it is created. 

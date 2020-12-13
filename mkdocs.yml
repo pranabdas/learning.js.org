@@ -20,6 +20,7 @@ nav:
           - loop: loop/loop.md
     - DOM:
           - Document Object Model: DOM/dom.md
+          - Event handler: DOM/event-handler.md
     - Node.js:
           - Introduction: node/introduction.md
           - Standard input-output: node/std-input-output.md
@@ -33,6 +34,7 @@ nav:
           - React.js: react/react.md
           - To do list project: react/to-do-list.md
           - Shopping cart project: react/shopping-cart.md
+          - Deploy to Github pages: react/githubpages.md
 
 theme:
     name: null

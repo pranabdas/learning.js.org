@@ -46,3 +46,38 @@ varScope()
 ```
 
 Note that if we define the first variable with `let`, it's scope will be whole function block while the scope of second `let` is only the if-condition block. 
+
+#### Default values for function argument
+
+```js
+function greetUser(greetingMessage="Hello", userName="User") {
+    console.log(greetingMessage + " " + userName);
+};
+
+> greetUser()
+Hello User
+
+> greetUser("Welcome")
+Welcome User
+
+> greetUser("Welcome", "Pranab")
+Welcome Pranab
+```
+
+#### Arbitrary number of arguments
+
+We can access the arguments by the `arguments` object. 
+
+```js
+function sumAll() {
+    var sum = 0; 
+
+    for (var ii=0; ii<arguments.length; ii++) {
+        sum += arguments[ii];
+    };
+    return sum;
+};
+
+> sumAll(2, 3, 4)
+9
+```

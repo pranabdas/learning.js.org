@@ -6,7 +6,7 @@ console.log("Hello Node.js!")
 
 Now we can run the javascript by typing the following in the terminal: 
 ```js 
-node intro.js 
+$ node intro.js 
 
 Hello Node.js!
 ``` 
