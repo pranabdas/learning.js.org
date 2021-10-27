@@ -35,6 +35,9 @@ nav:
           - To do list project: react/to-do-list.md
           - Shopping cart project: react/shopping-cart.md
           - Deploy to Github pages: react/githubpages.md
+    - Misc:
+          - Uninstall node (macOS): misc/node-uninstall.md
+          - Updating npm packages: misc/npm-update.md
 
 theme:
     name: null
