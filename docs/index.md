@@ -1,6 +1,8 @@
 ### Learning Javascript
 
-These are my notes while learning Javascript myself. I am putting it here, in case it helps you.
+These are my notes while learning Javascript myself. I am putting it here, in
+case it helps you. There are some excellent tutorials on javascript, I will list
+them in the [resources](resources.md) (the ones I came across).
 
 Table of content:
 
@@ -37,3 +39,4 @@ Table of content:
 + Miscellaneous
     - [Uninstall nodejs (macOS)](misc/node-uninstall.md)
     - [Updating npm packages](misc/npm-update.md)
++ [Resources](resources.md)
