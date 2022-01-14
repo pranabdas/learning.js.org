@@ -38,6 +38,7 @@ nav:
     - Misc:
           - Uninstall node (macOS): misc/node-uninstall.md
           - Updating npm packages: misc/npm-update.md
+          - CSpell: misc/cspell.md
     - Resources: resources.md
 
 theme:

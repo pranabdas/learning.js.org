@@ -39,4 +39,5 @@ Table of content:
 + Miscellaneous
     - [Uninstall nodejs (macOS)](misc/node-uninstall.md)
     - [Updating npm packages](misc/npm-update.md)
+    - [CSpell](misc/cspell.md)
 + [Resources](resources.md)

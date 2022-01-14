@@ -10,7 +10,7 @@ npm install
 
 If you don't have previous npm packages locally:
 ```bash
-# list first before actually upgrading
+# list updates before actually upgrading
 npx npm-check-updates --target minor
 # run the upgrade
 npx npm-check-updates --upgrade --target minor
