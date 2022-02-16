@@ -1,11 +1,14 @@
-### Deploying React app to github pages
+---
+title: Deploying React app to github pages
+sidebar_label: GitHub Deploy
+---
 
-Install `gh-pages` in your project. 
+Install `gh-pages` in your project.
 ```
 npm install gh-pages --save-dev
 ```
 
-Make following changes in the `package.json`: 
+Make following changes in the `package.json`:
 ```js
 {
   "homepage": "https://pranabdas.github.io/suvapp",
@@ -32,7 +35,15 @@ Make following changes in the `package.json`:
   ...
 ```
 
-Deploy command: 
+Deploy command:
 ```
 npm run deploy
 ```
+
+:::warning
+
+Note that if you are using `react-router` github pages deploy might not work
+properly. Please consider using `hash-router` instead. Alternatively, you can
+deploy via another service, e.g., Netlify.
+
+:::

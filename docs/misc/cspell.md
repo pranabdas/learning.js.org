@@ -1,4 +1,7 @@
-### CSpell
+---
+title: CSpell
+---
+
 Use CSpell for spell checking in your projects.
 
 Check spell for all files in a directory:

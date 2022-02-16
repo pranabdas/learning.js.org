@@ -1,4 +1,7 @@
-### Completely uninstalling nodejs and npm in macOS
+---
+title: Uninstalling nodejs and npm
+sidebar_label: Uninstall node
+---
 
 Where are the node files? Get the installer and expand to see.
 

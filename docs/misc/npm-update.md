@@ -1,4 +1,7 @@
-### Updating npm packages in node project
+---
+title: Updating npm packages in node project
+sidebar_label: Updating npm
+---
 If the previous version of npm packages are already available locally inside
 `node_modules` folder, following should do the job:
 ```bash

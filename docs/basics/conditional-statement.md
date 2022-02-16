@@ -1,53 +1,57 @@
-#### If condition 
+---
+title: Conditional Statement
+---
+
+### If condition
 
 ```js
-var age = 33; 
+var age = 33;
 
 if (age > 18) {
     console.log("Your are an adult.");
 }
 ```
 
-#### if-else 
+### if-else
 
-```js 
-var age = 15; 
+```js
+var age = 15;
 
 if (age > 18) {
-    console.log("You are an adult."); 
+    console.log("You are an adult.");
 } else {
     console.log("You are not an adult yet.");
 }
 ```
 
-During equality test, use `===` for strict equality: 
-```js 
-a = 4; 
-b = "4"; 
+During equality test, use `===` for strict equality:
+```js
+a = 4;
+b = "4";
 
-a == b // this will result true. 
-a === b // this will result false 
-``` 
+a == b // this will result true.
+a === b // this will result false
+```
 
-And and or operators are denoted by `&&` and `||`, respectively. 
-```js 
-var age = 35; 
+And and or operators are denoted by `&&` and `||`, respectively.
+```js
+var age = 35;
 
 if (age > 18 && age < 60) {
-    console.log("You are an adult but not a senior citizen."); 
+    console.log("You are an adult but not a senior citizen.");
 }
 ```
 
 There is a shorthand for if-else condition as well:
-```js 
+```js
 if (a==b) {
-    console.log("Match"); 
+    console.log("Match");
 } else {
     console.log("No match");
 }
-``` 
+```
 
-is same as: 
-```js 
-a==b ? console.log("Match") : console.log("No match"); 
+is same as:
+```js
+a==b ? console.log("Match") : console.log("No match");
 ```

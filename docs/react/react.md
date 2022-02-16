@@ -1,39 +1,47 @@
-### React.js 
+---
+title: React.js
+---
 
-An open source framework to build web application [https://reactjs.org](https://reactjs.org){:target="_blank"}. You need to have node.js installed in your system. Alternatively, you can run your development environment in Docker: 
+An open source framework to build web application [https://reactjs.org](
+https://reactjs.org). You need to have node.js installed in your system.
+Alternatively, you can run your development environment in Docker:
 ```sh
 docker run -ti -p 127.0.0.1:3000:3000 -v ${PWD}:/home node:lts-buster-slim bash
 ```
 
-```js 
+```js
 // create your app. npx allows to run create-react-app without installing
-npx create-react-app my-react-app 
-// move to my-react project directory 
-cd my-react-app 
-// start app 
-npm start 
-``` 
+npx create-react-app my-react-app
+// move to my-react project directory
+cd my-react-app
+// start app
+npm start
+```
 
-This will start a server in the localhost. A browser should be launched and you can see a spinning react logo. 
+This will start a server in the localhost. A browser should be launched and you
+can see a spinning react logo.
 
-We will clear all files in `public` and `src` directory, except `index.html` and `index.js`, respectively. Open `src/index.js` that is the starting point of the app. We can simplify this file: 
-```js 
+We will clear all files in `public` and `src` directory, except `index.html` and
+`index.js`, respectively. Open `src/index.js` that is the starting point of the
+app. We can simplify this file:
+```js
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render( 
+ReactDOM.render(
   <div>
-    <h1>Hello React! </h1> 
+    <h1>Hello React! </h1>
     <p>I am learning react and liking it. </p>
   </div>
   ,document.getElementById('root')
 );
-``` 
+```
 
-If we have more than one html element, we have to put everything inside a single `div`. 
+If we have more than one html element, we have to put everything inside a single
+`div`.
 
-##### Creating react component 
-React component allows bit more modular approach: 
+### Creating react component
+React component allows bit more modular approach:
 
 ```js
 import React from 'react';
@@ -46,12 +54,12 @@ function Heading() {
       <p>I am learning React and I am liking it.</p>
     </div>
   )
-}; 
+};
 
 ReactDOM.render(< Heading />, document.getElementById('root'));
 ```
 
-Alternative where we can use extension of `React.Component`: 
+Alternative where we can use extension of `React.Component`:
 
 ```js
 import React from 'react';
@@ -66,12 +74,12 @@ class Heading extends React.Component {
       </div>
     )
   }
-}; 
+};
 
 ReactDOM.render(< Heading />, document.getElementById('root'));
 ```
 
-**Important:** React component names must start with uppercase letter. 
+**Important:** React component names must start with uppercase letter.
 
 Now let's separate our App component in a separate file. Our `index.js` entry becomes:
 ```js
@@ -83,7 +91,7 @@ import App from './App.jsx';
 ReactDOM.render(< App />, document.getElementById('root'));
 ```
 
-We use `App.jsx` in the `src` directory: 
+We use `App.jsx` in the `src` directory:
 ```js
 import React from 'react';
 
@@ -99,7 +107,8 @@ function App() {
 export default App
 ```
 
-Now let's display some data. You can get the data from `https://api.github.com/users/<username>`. 
+Now let's display some data. You can get the data from
+`https://api.github.com/users/<username>`.
 
 ```js
 import React from 'react';
@@ -153,7 +162,8 @@ export default App
 
 ```
 
-Let's create an app to add two numbers. Here we will learn how to accept user inputs. We just work in our `App.jsx` file from previous example. 
+Let's create an app to add two numbers. Here we will learn how to accept user
+inputs. We just work in our `App.jsx` file from previous example.
 ```js
 import React, { useState } from 'react';
 
@@ -169,13 +179,13 @@ function App() {
     return(
     <>
         <h3>Adding two numbers</h3>
-        <input 
+        <input
             type="number"
             value={input1}
             onChange={e => setInput1(+e.target.value)}
             placeholder="0"
         />
-        <input 
+        <input
             type="number"
             value={input2}
             onChange={e => setInput2(+e.target.value)}
@@ -190,15 +200,15 @@ function App() {
 export default App
 ```
 
-##### Fetch data from API 
-```js 
-import React from 'react'; 
+### Fetch data from API
+```js
+import React from 'react';
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      loading: false, 
+      loading: false,
       planet: {}
     }
   }
@@ -208,15 +218,15 @@ class App extends React.Component {
     fetch("https://swapi.dev/api/planets/2/")
         .then(response => response.json())
         .then(data => {
-          this.setState({ 
-            loading: false, 
+          this.setState({
+            loading: false,
             planet: data
           })
         })
   }
 
   render() {
-    const text = this.state.loading ? "loading..." : this.state.planet.name 
+    const text = this.state.loading ? "loading..." : this.state.planet.name
     return (
       <div>
         <p>{text}</p>
@@ -228,4 +238,6 @@ class App extends React.Component {
 export default App;
 ```
 
-Finally, let's combine all that we have learned. We will accept an user input of their Github username, and later show them some info based their Github profile data. 
+Finally, let's combine all that we have learned. We will accept an user input of
+their Github username, and later show them some info based their Github profile
+data.

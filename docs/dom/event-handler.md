@@ -1,8 +1,11 @@
-### Event handler 
+---
+title: Event handler
+---
 
-We can do something based on the browser events, like when a button is clicked, page is scrolled etc. 
+We can do something based on the browser events, like when a button is clicked,
+page is scrolled etc.
 
-Let's create a simple html page: 
+Let's create a simple html page:
 ```html
 <html>
     <head>
@@ -30,4 +33,6 @@ Let's create a simple html page:
 </html>
 ```
 
-Now whenever we click our header, we will see an alert saying, "Top header is clicked". The full list of browser events are available in [MDN website]().
+Now whenever we click our header, we will see an alert saying, "Top header is
+clicked". The full list of browser events are available in [MDN website](
+https://developer.mozilla.org/en-US/docs/Web/Events).
