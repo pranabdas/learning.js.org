@@ -24,3 +24,9 @@ rm package-lock.json
 mkdir empty && rsync -r --delete empty/ node_modules && rm -r node_modules empty
 npm i
 ```
+
+### How to update packe-lock.json without installing packages?
+```bash
+rm package-lock.json
+npm i --package-lock-only
+```
