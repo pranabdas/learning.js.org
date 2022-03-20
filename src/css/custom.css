@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #0099ff;
+  --color-primary: #0076df;
   --color-secondary: #ED297A;
   --color-white: #F5F6F7;
   --color-black: #000;
@@ -25,6 +25,8 @@
   --ifm-color-primary-lightest: var(--color-primary);
   --ifm-toc-border-color: var(--border-color);
   --ifm-global-shadow-lw: 0px;
+  --ifm-table-head-background: rgba(0, 0, 0, 0.06);
+  --ifm-table-row-hover-color: rgba(0, 0, 0, 0.01);
 }
 
 html[data-theme='dark'] {
@@ -37,6 +39,8 @@ html[data-theme='dark'] {
   --ifm-toc-link-color: var(--color-white);
   --ifm-tabs-color: var(--color-white);
   --ifm-background-surface-color: #161b22;
+  --ifm-table-head-background: rgba(255, 255, 255, 0.14);
+  --ifm-table-row-hover-color: rgba(255, 255, 255, 0.02);
 }
 
 .docusaurus-highlight-code-line {
@@ -75,6 +79,25 @@ html[data-theme='dark'] .footer {
 
 html[data-theme='dark'] .header-github-link:before {
   background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
+}
+
+.header-homepage-link:hover {
+  opacity: 0.6;
+}
+
+.header-homepage-link:before {
+  content: '';
+  width: 18px;
+  height: 24px;
+  display: flex;
+  transform: translate(-2px, 1px);
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 384 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z'/%3E%3C/svg%3E")
+    no-repeat;
+}
+
+html[data-theme='dark'] .header-homepage-link:before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 384 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z'/%3E%3C/svg%3E")
     no-repeat;
 }
 
@@ -150,26 +173,30 @@ html[data-theme='dark'] .navbar {
   color: #666;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 600px) {
   .container {
     --ifm-spacing-horizontal: 1.5rem;
   }
 }
 
+.markdown h1:first-child {
+    font-size: 2em;
+}
+
 h1 {
-    font-size: 2em !important;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 1.5em !important;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 1.17em !important;
+  font-size: 1.17em;
 }
 
 h4 {
-  font-size: 1em !important;
+  font-size: 1em;
 }
 
 .dropdown__link:hover, .dropdown__link--active {
@@ -180,3 +207,14 @@ h4 {
   font-size: 1rem;
 }
 
+.hero__title {
+  font-size: 2em;
+}
+
+tr:hover td {
+  background: var(--ifm-table-row-hover-color);
+}
+
+.navbar__link {
+  padding: 0.6em 0.75em;
+}

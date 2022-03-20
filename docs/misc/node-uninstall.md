@@ -3,6 +3,13 @@ title: Uninstalling nodejs and npm
 sidebar_label: Uninstall node
 ---
 
+### Clean NPM/Yarn cache
+```bash
+npm cache clean --force
+yarn cache clean
+```
+
+### Uninstall
 Where are the node files? Get the installer and expand to see.
 
 ```bash

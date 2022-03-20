@@ -241,3 +241,9 @@ export default App;
 Finally, let's combine all that we have learned. We will accept an user input of
 their Github username, and later show them some info based their Github profile
 data.
+
+:::info
+
+If you use React `StrictMode`, components will render twice on every change.
+
+:::

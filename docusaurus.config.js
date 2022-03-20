@@ -14,12 +14,18 @@ async function config() {
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
+        metadata: [{name: 'theme-color', content: '#006bb3'}],
         prism: {
           theme: require("prism-react-renderer/themes/github"),
           darkTheme: require("prism-react-renderer/themes/nightOwl"),
           additionalLanguages: ["vim", "docker", "powershell"],
         },
-        hideableSidebar: true,
+        docs: {
+          sidebar: {
+            hideable: true,
+            autoCollapseCategories: true,
+          }
+        },
         colorMode: {
           //   defaultMode: "dark",
           //   switchConfig: {
@@ -103,17 +109,20 @@ async function config() {
               ],
             },
             {
-              to: "https://pranabdas.github.io",
-              label: "About me",
-              position: "left",
-              target: "_self",
-              prependBaseUrlToHref: false,
-            },
-            {
               href: "https://github.com/pranabdas/javascript",
               position: "right",
               className: "header-github-link",
               "aria-label": "GitHub repository",
+              title: "Visit project repository in GitHub",
+              target: "_self",
+            },
+            {
+              to: "https://pranabdas.github.io",
+              "aria-label": "About me",
+              position: "right",
+              target: "_self",
+              className: "header-homepage-link",
+              title: "Go to Pranab's Homepage",
             },
           ],
         },
@@ -133,7 +142,8 @@ async function config() {
             sidebarPath: require.resolve("./sidebars.js"),
             routeBasePath: "/",
             // Please change this to your repo.
-            editUrl: "https://github.com/pranabdas/javascript/blob/master/",
+            editUrl: "https://github.com/pranabdas/javascript/blob/main/",
+            // breadcrumbs: false,
           },
           theme: {
             customCss: require.resolve("./src/css/custom.css"),

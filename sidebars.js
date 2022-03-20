@@ -5,6 +5,9 @@ module.exports = {
       type: "category",
       label: "Basics",
       collapsed: true,
+      link: {
+        type: "generated-index",
+      },
       items: [
         "basics/setup",
         "basics/variables",
@@ -17,6 +20,9 @@ module.exports = {
       type: "category",
       label: "Functions and Objects",
       collapsed: true,
+      link: {
+        type: "generated-index",
+      },
       items: [
         "functions-objects/functions",
         "functions-objects/variable-scope",
@@ -28,6 +34,9 @@ module.exports = {
       type: "category",
       label: "DOM",
       collapsed: true,
+      link: {
+        type: "generated-index",
+      },
       items: [
         "dom/dom",
         "dom/event-handler",
@@ -37,6 +46,9 @@ module.exports = {
       type: "category",
       label: "Node",
       collapsed: true,
+      link: {
+        type: "generated-index",
+      },
       items: [
         "node/node",
         "node/io",
@@ -50,6 +62,9 @@ module.exports = {
       type: "category",
       label: "Electron",
       collapsed: true,
+      link: {
+        type: "generated-index",
+      },
       items: [
         "electron/electron",
       ],
@@ -58,15 +73,22 @@ module.exports = {
       type: "category",
       label: "React",
       collapsed: true,
+      link: {
+        type: "generated-index",
+      },
       items: [
         "react/react",
         "react/gh-pages",
+        "react/typescript",
       ],
     },
     {
       type: "category",
       label: "Miscellaneous",
       collapsed: true,
+      link: {
+        type: "generated-index",
+      },
       items: [
         "misc/node-uninstall",
         "misc/npm-update",
