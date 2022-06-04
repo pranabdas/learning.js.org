@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjavascript=self.webpackChunkjavascript||[]).push([[180],{6314:function(a){a.exports=JSON.parse('{"title":"DOM","slug":"/category/dom","permalink":"/javascript/category/dom","navigation":{"previous":{"title":"map","permalink":"/javascript/functions-objects/map"},"next":{"title":"DOM","permalink":"/javascript/dom/"}}}')}}]);
