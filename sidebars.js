@@ -14,6 +14,7 @@ module.exports = {
         "basics/conditional-statement",
         "basics/arrays",
         "basics/loop",
+        "basics/array-methods",
       ],
     },
     {
@@ -27,7 +28,6 @@ module.exports = {
         "functions-objects/functions",
         "functions-objects/variable-scope",
         "functions-objects/objects",
-        "functions-objects/map",
       ],
     },
     {

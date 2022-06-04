@@ -5,7 +5,7 @@ title: Conditional Statement
 ### If condition
 
 ```js
-var age = 33;
+let age = 33;
 
 if (age > 18) {
     console.log("Your are an adult.");
@@ -15,7 +15,7 @@ if (age > 18) {
 ### if-else
 
 ```js
-var age = 15;
+let age = 15;
 
 if (age > 18) {
     console.log("You are an adult.");
@@ -35,7 +35,7 @@ a === b // this will result false
 
 And and or operators are denoted by `&&` and `||`, respectively.
 ```js
-var age = 35;
+let age = 35;
 
 if (age > 18 && age < 60) {
     console.log("You are an adult but not a senior citizen.");

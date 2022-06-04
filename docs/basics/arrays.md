@@ -3,7 +3,7 @@ title: Arrays
 ---
 
 ```js
-var colors
+let colors
 colors = ["red", "green", "blue", "orange"];
 console.log(colors)
 ```
@@ -16,7 +16,7 @@ console.log(colors)
 In javascript arrays an object like we saw the `Date()` object before. Arrays
 can hold mixed data types:
 ```js
-var mixVar = [45, "New York", true]
+let mixVar = [45, "New York", true]
 console.log(mixVar)
 ```
 
@@ -61,7 +61,7 @@ console.log(colors);
 
 Remove the last item of an array:
 ```js
-var removedItem;
+let removedItem;
 removedItem = colors.pop();  // in this way you can use the removed item
 console.log(colors);
 
@@ -91,7 +91,7 @@ console.log(colors)
 
 Copy an array using `.slice()`
 ```js
-var themeColors = colors.slice()
+let themeColors = colors.slice()
 console.log(themeColors)
 
 ["purple", "orange", "green", "pink"] (4)
@@ -99,7 +99,7 @@ console.log(themeColors)
 
 Index of
 ```js
-var pos = colors.indexOf("orange", 0); // give the position where to start the search, here 0.
+let pos = colors.indexOf("orange", 0); // give the position where to start the search, here 0.
 console.log(pos);
 
 1
@@ -107,12 +107,12 @@ console.log(pos);
 
 Join the array elements:
 ```js
-var stringArray = colors.join();
+let stringArray = colors.join();
 console.log(stringArray)
 
 purple,orange,green,pink
 
-var stringArray = colors.join(", "); // you can give the separator as argument
+let stringArray = colors.join(", "); // you can give the separator as argument
 console.log(stringArray)
 
 purple, orange, green, pink

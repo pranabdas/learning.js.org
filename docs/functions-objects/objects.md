@@ -4,7 +4,7 @@ title: Objects
 
 Defining an object:
 ```js
-var course = new Object();
+let course = new Object();
 
 course.title = "Learning Javascript";
 course.level = "Beginner";
@@ -21,9 +21,9 @@ delete course.level
 ```
 There is another shorthand:
 ```js
-var course = new Object();
+let course = new Object();
 
-var course = {
+let course = {
     title: "Learning Javascript",
     level: "Beginner",
     published: true,
@@ -33,9 +33,9 @@ var course = {
 Apart from the object properties, we can also have object methods, to do
 something on the data. Methods are functions.
 ```js
-var course = new Object();
+let course = new Object();
 
-var course = {
+let course = {
     title: "Learning Javascript",
     level: "Beginner",
     published: true,
@@ -62,7 +62,7 @@ function Course(title, level, published, views) {
     };
 }
 
-var course01 = new Course("Learning Javascript", "Beginner", true, "0");
+let course01 = new Course("Learning Javascript", "Beginner", true, "0");
 
 console.log(course01)
 

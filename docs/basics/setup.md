@@ -55,14 +55,14 @@ We can do some basic math as well.
 
 We can assign some variables as well, and operate on them.
 ```js
-> var name = "Pranab"
+> let name = "Pranab"
   console.log(name)
 
 Pranab
 
-> var x = 7;
-  var y = 4;
-  var mult = x*y;
+> let x = 7;
+  let y = 4;
+  let mult = x*y;
   console.log(mult)
 
 28
@@ -73,7 +73,7 @@ semicolon, this is just my personal preference for better code readability.
 
 We can do something bit more advanced like getting printing the date:
 ```js
-> var date = new Date();
+> let date = new Date();
   console.log(date)
 
 Wed Apr 22 2020 13:18:27 GMT+0800 (+08)

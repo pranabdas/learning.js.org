@@ -16,8 +16,8 @@ Now we can have a main program, say `main.js` where we can call this function.
 ```js
 const myModule = require('./myModule');
 
-var x = 5;
-var x2 = myModule.square(x);
+let x = 5;
+let x2 = myModule.square(x);
 console.log(x2);
 ```
 
@@ -34,6 +34,6 @@ Note the use of arrow function to make it concise.
 ```js
 const myModule = require('./myModule');
 
-var result = myModule.addMult(3, 4);
+let result = myModule.addMult(3, 4);
 console.log(`Add. = ${result.add} \nMult. = ${result.mult}`);
 ```

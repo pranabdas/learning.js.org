@@ -7,7 +7,7 @@ function.js, and load it to our empty index.html. Later I will use console to
 call and print the results.
 ```js
 function multiply(a, b) {
-    var result = a * b;
+    let result = a * b;
     return result;
 }
 ```
@@ -28,16 +28,16 @@ console.log(multiply(17, 4))
 
 Anonymous functions do not have name, they are tied to variables or events.
 ```js
-var a = 5/6;
-var b = 7/9;
+let a = 5/6;
+let b = 7/9;
 
-var theBiggest = function() {
+const theBiggest = function() {
     a > b ? result = a : result = b;
     return result;
 }
 ```
 ```js
-var biggerRatio = theBiggest()  // We invoke the function by adding () to the end of the variable
+let biggerRatio = theBiggest()  // We invoke the function by adding () to the end of the variable
 console.log(biggerRatio)
 
 0.8333333333333334
@@ -46,13 +46,13 @@ Note that if you don't add the parenthesis () in the end of the variable, and `c
 
 We can have arguments to an anonymous function as well:
 ```js
-var theBiggest2 = function(x, y) {
+const theBiggest2 = function(x, y) {
     x > y ? result = x : result = y;
     return result;
 }
 ```
 ```js
-var biggerRatio2 = theBiggest2(3/4, 5/7);
+let biggerRatio2 = theBiggest2(3/4, 5/7);
 console.log(biggerRatio2)
 
 0.75
@@ -64,7 +64,7 @@ In this case the function is invoked as soon as the browser encounters them. It
 can populate our variable straightaway. We wrap the whole function inside a
 parenthesis (), followed by another set of parenthesis to pass the variables.
 ```js
-var theBiggest3 = (function(a, b) {
+const theBiggest3 = (function(a, b) {
     a > b ? result = a : result = b;
     return result;
 })(3/4, 5/7)
@@ -78,7 +78,7 @@ console.log(theBiggest3);
 
 This is pretty much the same as anonymous function but with concise syntax:
 ```js
-var total = (price) => {
+const total = (price) => {
     return price + price * 7/100;
 };
 
