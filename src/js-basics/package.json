@@ -1,0 +1,12 @@
+{
+  "name": "js-basics",
+  "version": "1.0.0",
+  "description": "Initialize this a node/npm project: ```console mkdir js-basics cd js-basics npm init --yes ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
