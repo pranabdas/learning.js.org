@@ -8,7 +8,7 @@ async function config() {
     baseUrl: "/javascript/", // must have a trailing "/"
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
-    favicon: "img/favicon.ico",
+    favicon: "img/favicon.png",
     organizationName: "pranabdas", // Usually your GitHub org/user name.
     projectName: "Javascript tutorial", // Usually your repo name.
     titleDelimiter: "•",
@@ -40,7 +40,7 @@ async function config() {
           hideOnScroll: true,
           logo: {
             alt: "Logo",
-            src: "img/favicon.ico",
+            src: "img/favicon.png",
           },
           items: [
             {
