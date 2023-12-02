@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjavascript=self.webpackChunkjavascript||[]).push([[687],{1351:function(a){a.exports=JSON.parse('{"title":"Basics","slug":"/category/basics","permalink":"/javascript/category/basics","navigation":{"previous":{"title":"Welcome","permalink":"/javascript/"},"next":{"title":"Setup","permalink":"/javascript/basics/setup"}}}')}}]);

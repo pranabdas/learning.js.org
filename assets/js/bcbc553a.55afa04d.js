@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjavascript=self.webpackChunkjavascript||[]).push([[854],{2369:function(t){t.exports=JSON.parse('{"title":"React","slug":"/category/react","permalink":"/javascript/category/react","navigation":{"previous":{"title":"Electron.js","permalink":"/javascript/electron/"},"next":{"title":"React.js","permalink":"/javascript/react/"}}}')}}]);

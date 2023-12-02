@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjavascript=self.webpackChunkjavascript||[]).push([[234],{6228:function(e){e.exports=JSON.parse('{"title":"Node","slug":"/category/node","permalink":"/javascript/category/node","navigation":{"previous":{"title":"Event handler","permalink":"/javascript/dom/event-handler"},"next":{"title":"Node.js","permalink":"/javascript/node/"}}}')}}]);
