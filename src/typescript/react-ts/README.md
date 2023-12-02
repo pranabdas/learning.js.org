@@ -6,4 +6,4 @@ npx -y create-react-app react-ts --template typescript
 ```
 
 ### Resources
-- <https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheets>
+- https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheets

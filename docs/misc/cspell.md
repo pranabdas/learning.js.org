@@ -14,4 +14,4 @@ Check spell for certain file types only:
 npx cspell "docs/**/.js"
 ```
 
-More info - <https://cspell.org/>
+More info - https://cspell.org/
