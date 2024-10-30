@@ -15,7 +15,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [{ name: "theme-color", content: "#081020" }],
+      metadata: [{ name: "theme-color", content: "#06445c" }],
       prism: {
         theme: themes.github,
         darkTheme: themes.nightOwl,
@@ -28,12 +28,12 @@ const config = {
         },
       },
       colorMode: {
-        //   defaultMode: "dark",
-        //   switchConfig: {
-        //     // darkIcon: '☾',
-        //     // lightIcon: "☀️"
-        //   },
-        //   respectPrefersColorScheme: true,
+        // defaultMode: "dark",
+        // switchConfig: {
+        //   darkIcon: "☾",
+        //   lightIcon: "☀️",
+        // },
+        respectPrefersColorScheme: true,
       },
       navbar: {
         title: "Javascript tutorial",

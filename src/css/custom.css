@@ -25,7 +25,7 @@
   --ifm-color-primary-lightest: var(--color-primary);
   --ifm-toc-border-color: var(--border-color);
   --ifm-global-shadow-lw: 0px;
-  --ifm-table-head-background: rgba(0, 0, 0, 0.06);
+  --ifm-table-head-background: var(--ifm-table-stripe-background);
   --ifm-table-row-hover-color: rgba(0, 0, 0, 0.01);
 }
 
@@ -37,9 +37,9 @@ html[data-theme="dark"] {
   --ifm-menu-color: var(--color-white);
   --ifm-toc-link-color: var(--color-white);
   --ifm-tabs-color: var(--color-white);
-  --ifm-background-surface-color: #081020;
-  --ifm-table-head-background: rgba(255, 255, 255, 0.14);
-  --ifm-table-row-hover-color: rgba(255, 255, 255, 0.02);
+  --ifm-background-surface-color: #161b22;
+  --ifm-table-row-hover-color: rgba(255, 255, 255, 0.05);
+  --ifm-toc-border-color: #1e293b;
 }
 
 .docusaurus-highlight-code-line {
@@ -163,10 +163,6 @@ a:hover {
   box-shadow: none;
 }
 
-html[data-theme="dark"] .navbar {
-  border-bottom: 0;
-}
-
 .fig-caption {
   padding: 0.5em;
   font-size: 0.95em;
@@ -242,10 +238,6 @@ body {
   text-decoration: none;
 }
 
-.main-wrapper > div {
-  flex: 1 0;
-}
-
 .navbar__title {
   background: linear-gradient(
     to right,
@@ -270,4 +262,8 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.markdown img {
+  border-radius: var(--ifm-global-radius);
 }
