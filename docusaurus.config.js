@@ -1,7 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 import { themes } from "prism-react-renderer";
 const site_url = "https://pranabdas.github.io";
-const drive_url = "https://pranabdas.github.io/drive";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Javascript tutorial",
